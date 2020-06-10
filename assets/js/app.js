@@ -1,7 +1,8 @@
-// @TODO: YOUR CODE HERE!
+// Setting the SVG width and height in pixels
 var svgWidth = 850;
 var svgHeight = 500;
 
+// 50 pixel margins all around
 var margin = {
   top: 50,
   right: 50,
@@ -9,6 +10,7 @@ var margin = {
   left: 50
 };
 
+// Standard convention for calculating width and height of the plot area
 var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
 
