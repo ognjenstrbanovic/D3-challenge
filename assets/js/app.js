@@ -26,8 +26,6 @@ var chartGroup = svg.append("g")
 // Import Data
 d3.csv("assets/data/data.csv").then(function(myData) {
 
-    console.log(myData)
-
     // Step 1: Parse Data/Cast as numbers
     // ==============================
     myData.forEach(function(data) {
