@@ -75,6 +75,7 @@ d3.csv("assets/data/data.csv").then(function(myData) {
     .attr("x", d => xLinearScale(d.smokes))
     .attr("y", d => yLinearScale(d.age) + 5)
     .attr("text-anchor", "middle")
+    .attr("font-size", "10px")
     .text(function(d) {
         return d.abbr
     });
