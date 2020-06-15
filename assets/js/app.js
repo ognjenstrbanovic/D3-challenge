@@ -78,46 +78,45 @@ d3.csv("assets/data/data.csv").then(function(myData) {
     .text(function(d) {
         return d.abbr
     });
-});
 
 
-  //   // Step 6: Initialize tool tip
-  //   // ==============================
-  //   var toolTip = d3.tip()
-  //     .attr("class", "tooltip")
-  //     .offset([80, -60])
-  //     .html(function(d) {
-  //       // ***MUST CHANGE BELOW***
-  //       return (`${d.rockband}<br>Smokes: ${d.smokes}<br>Age: ${d.age}`);
-  //     });
+    // Step 6: Initialize tool tip
+    // ==============================
+    var toolTip = d3.tip()
+      .attr("class", "tooltip")
+      .offset([80, -60])
+      .html(function(d) {
+        // ***MUST CHANGE BELOW***
+        return (`${d.rockband}<br>Smokes: ${d.smokes}<br>Age: ${d.age}`);
+      });
 
-  //   // Step 7: Create tooltip in the chart
-  //   // ==============================
-  //   chartGroup.call(toolTip);
+    // Step 7: Create tooltip in the chart
+    // ==============================
+    chartGroup.call(toolTip);
 
-  //   // Step 8: Create event listeners to display and hide the tooltip
-  //   // ==============================
-  //   circlesGroup.on("click", function(data) {
-  //     toolTip.show(data, this);
-  //   })
-  //     // onmouseout event
-  //     .on("mouseout", function(data, index) {
-  //       toolTip.hide(data);
-  //     });
+    // Step 8: Create event listeners to display and hide the tooltip
+    // ==============================
+    circlesGroup.on("click", function(data) {
+      toolTip.show(data, this);
+    })
+      // onmouseout event
+      .on("mouseout", function(data, index) {
+        toolTip.hide(data);
+      });
 
-  //   // Create axes labels
-  //   chartGroup.append("text")
-  //     .attr("transform", "rotate(-90)")
-  //     .attr("y", 0 - margin.left - 5)
-  //     .attr("x", 0 - (height / 2))
-  //     .attr("dy", "1em")
-  //     .attr("class", "axisText")
-  //     .text("Age");
+    // Create axes labels
+    chartGroup.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left - 5)
+      .attr("x", 0 - (height / 2))
+      .attr("dy", "1em")
+      .attr("class", "axisText")
+      .text("Age");
 
-  //   chartGroup.append("text")
-  //     .attr("transform", `translate(${width / 2}, ${height + margin.top -5})`)
-  //     .attr("class", "axisText")
-  //     .text("Smokes (%)");
-  // }).catch(function(error) {
-  //   console.log(error);
-  // });
+    chartGroup.append("text")
+      .attr("transform", `translate(${width / 2}, ${height + margin.top -5})`)
+      .attr("class", "axisText")
+      .text("Smokes (%)");
+  }).catch(function(error) {
+    console.log(error);
+  });
