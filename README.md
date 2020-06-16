@@ -5,7 +5,7 @@ In this HW assignment, I get a new position for a major metropolitan paper. The 
 
 ![D3 Scatter Plot](https://github.com/ognjenstrbanovic/D3-challenge/blob/master/D3%20Scatter%20Plot.jpg?raw=true)  
 
-This was the final product. I did what was asked of me, but it is not a very visually appealling plot.  
+To me, this is not a very visually appealing plot, even though I did follow the instructions closely and did exactly what was asked of me.  
 
 Anyway, the bonus assignment was one that I was not successful in completing. Disappointing for me... yet and still, I had to remind myself that - only 4 months ago - I didn't know what CSS was, for example!  
 Anyway, here is what I learned this week:  
