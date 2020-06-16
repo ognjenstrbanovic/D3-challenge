@@ -59,7 +59,7 @@ d3.csv("assets/data/data.csv").then(function(myData) {
 
     // Step 5: Create Circles - for scatter plot points
     // ==============================
-    var circlesGroup = chartGroup.selectAll("circle")
+    chartGroup.selectAll("circle")
     .data(myData)
     .enter()
     .append("circle")
@@ -73,9 +73,9 @@ d3.csv("assets/data/data.csv").then(function(myData) {
     .enter()
     .append("text")
     .attr("x", d => xLinearScale(d.smokes))
-    .attr("y", d => yLinearScale(d.age) + 5)
+    .attr("y", d => yLinearScale(d.age) + 3.75)
     .attr("text-anchor", "middle")
-    .attr("font-size", "10px")
+    .style("font-size", "10px")
     .text(function(d) {
         return d.abbr
     });
