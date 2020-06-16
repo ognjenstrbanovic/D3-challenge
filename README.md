@@ -2,7 +2,12 @@
 To me, this was the most difficult unit to learn. It surely had something to do with the fact that we were not in class, and instead learning through a Zoom session. But really, it was a steep learning curve...  
 In this HW assignment, I get a new position for a major metropolitan paper. The task is to "analyze the current trends shaping people's lives, as well as creating charts, graphs, and interactive elements to help readers understand my findings". The feature story is "about the health risks facing particular demographics". The dataset that the editor includes is "from the U.S. Census Bureau and the Behavioral Risk Factor Surveillance System".  
 **The core of what I did was create a scatterplot between two of the data variables.** I chose *Smokers vs. Age*. Each state was to be represented with circle elements (with state abbreviations inside) - this was done in the ```app.js``` file - with data pulled using the ```d3.csv``` function. In addition, axes and labels were added through D3.js, and I used ```python -m http.server``` to run it and avoid a CORS error in the browser.  
-The bonus assignment was one that I was not successful in completing. Disappointing for me... yet and still, I had to remind myself that - only 4 months ago - I didn't know what CSS was, for example!  
+
+![D3 Scatter Plot](https://github.com/ognjenstrbanovic/D3-challenge/blob/master/D3%20Scatter%20Plot.jpg?raw=true)  
+
+This was the final product. I did what was asked of me, but it is not a very visually appealling plot.  
+
+Anyway, the bonus assignment was one that I was not successful in completing. Disappointing for me... yet and still, I had to remind myself that - only 4 months ago - I didn't know what CSS was, for example!  
 Anyway, here is what I learned this week:  
 
 > ***Objectives for *D3.js* Unit:***  
